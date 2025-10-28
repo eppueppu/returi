@@ -161,3 +161,58 @@ footer {
   font-size: 0.9rem;
   border-top: 1px solid rgba(0, 255, 153, 0.3);
 }
+
+/* PAGE STYLES FOR SUBPAGES */
+.content-page {
+  text-align: center;
+  padding: 8rem 2rem 4rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.content-page h1 {
+  color:#286b12;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 15px #286b12;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.player-card {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 255, 153, 0.3);
+  box-shadow: 0 0 15px rgba(0, 255, 153, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.player-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 255, 153, 0.5);
+}
+
+.match-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.match-table th, .match-table td {
+  border: 1px solid rgba(0, 255, 153, 0.3);
+  padding: 0.8rem;
+}
+
+.match-table th {
+  background: rgba(0, 255, 153, 0.2);
+}
+
+.match-table td {
+  background: rgba(0, 0, 0, 0.5);
+}
