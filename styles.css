@@ -1,4 +1,4 @@
-/* Import futuristic font */
+/* fontti siihe */
 body {
   margin: 0;
   font-family: 'Orbitron', sans-serif;
@@ -25,7 +25,7 @@ body {
   font-size: 1.5rem;
   font-weight: 700;
   color: #286b12;
-  text-shadow: 0 0 10px #286b12;
+  text-shadow: 0 0 10px #1aad33;
 }
 
 .navbar ul {
@@ -73,7 +73,7 @@ body {
   box-shadow: 0 0 40px rgba(0, 255, 153, 0.3);
 }
 
-/* Fade-in animations */
+/* Fade-in animaatioita */
 .fade-in {
   opacity: 0;
   animation: fadeIn 1.2s ease-out forwards;
@@ -104,7 +104,7 @@ body {
 
 .title {
   font-size: 4rem;
-  color:  #286b12;
+  color:  #1aad33;
   margin-bottom: 1rem;
 }
 
@@ -131,7 +131,7 @@ body {
   box-shadow: 0 0 30px #286b12, 0 0 60px #286b12;
 }
 
-/* About Section */
+/* about section */
 .about {
   text-align: center;
   padding: 5rem 2rem;
