@@ -46,19 +46,55 @@ body {
 
 /* Hero Section */
 .hero {
-  background-image: url('returilogo123.png') no-repeat center center/cover;
+  background: url('returilogo123.png') no-repeat center center/cover;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   position: relative;
+  animation: bgPulse 6s infinite alternate ease-in-out;
+}
+
+/* Green glow pulse effect */
+@keyframes bgPulse {
+  from { filter: brightness(100%) drop-shadow(0 0 10px #199e27); }
+  to { filter: brightness(130%) drop-shadow(0 0 30px #199e27); }
 }
 
 .overlay {
   background: rgba(0, 0, 0, 0.7);
   padding: 4rem;
   border-radius: 12px;
+}
+
+/* Fade-in animations */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+.fade-in-delayed {
+  opacity: 0;
+  animation: fadeIn 1.8s ease-out forwards;
+  animation-delay: 0.6s;
+}
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1.4s ease-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .title {
@@ -84,7 +120,7 @@ body {
 }
 
 .cta-button:hover {
-  background-color: #0088cc;
+  background-color: #15822b;
 }
 
 /* About Section */
@@ -96,7 +132,7 @@ body {
 }
 
 .about h2 {
-  color: #00aaff;
+  color: #1aad33;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
